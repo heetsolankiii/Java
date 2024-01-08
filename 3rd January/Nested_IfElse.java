@@ -1,6 +1,4 @@
-package Java;
-
-public class Smallest {
+public class Nested_IfElse {
     public static void main(String[] args) {
         int a=5;
         int b=2;
