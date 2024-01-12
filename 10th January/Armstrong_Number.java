@@ -1,21 +1,29 @@
-public class Armstrong_Number {
-    public static void main(String[] args) {
-        int number = 371, originalNumber, remainder=0, sum=0, cube=0;   //Initializing all the variables
-        originalNumber = number;    //Copying the number to another variable
-        while (originalNumber != 0)     //Checking for the condition
+public class Armstrong_Number 
+{
+    public static void main(String[] args) 
+    {
+        int number = 1634, originalNumber = 0, remainder = 0, result = 0, n = 0;
+        originalNumber = number;
+        int originalNumber1 = number;
+        while(originalNumber != 0) 
         {
-            remainder = originalNumber % 10;    //Finding remainder of the last digit
-            cube = remainder*remainder*remainder;   //Finding cube of the remainder
-            sum = sum + cube;   //Adding it to sum
-            originalNumber = originalNumber / 10;   //Dividing the number by 10
+            remainder = originalNumber % 10;
+            n++;
+            originalNumber /= 10;
+    }
+        while(originalNumber1 != 0)
+        {
+                remainder = originalNumber1 % 10;
+                result += Math.pow(remainder, n);
+                originalNumber1 /= 10;
         }
-        if(sum == number)   //If number is an Armstrong Number
+        if(result == number)
         {
-            System.out.println(number + " is an Armstrong Number.");    //Printing the same
+            System.out.println(number + " is an Armstrong number.");
         }
-        else    //If number is not an Armstrong Number
+        else
         {
-            System.out.println(number + " is not an Armstrong Number.");    //Printing the same
+            System.out.println(number + " is not an Armstrong number.");
         }
     }
 }
