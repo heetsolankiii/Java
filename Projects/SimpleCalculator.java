@@ -1,5 +1,33 @@
 import java.util.*;
 public class SimpleCalculator {
+    //Addition
+    static void Addition(int firstNumber, int secondNumber) {
+        int calculate = (firstNumber + secondNumber);
+        System.out.println(firstNumber + "+" + secondNumber + "=" + calculate);
+    }
+
+    //Subtraction
+    static void Subtraction(int firstNumber, int secondNumber) {
+        int calculate = (firstNumber - secondNumber);
+        System.out.println(firstNumber + "-" + secondNumber + "=" + calculate);    
+    }
+
+    //Multiplication
+    static void Multiplication(int firstNumber, int secondNumber) {
+        int calculate = (firstNumber * secondNumber);
+        System.out.println(firstNumber + "*" + secondNumber + "=" + calculate);    }
+
+    //Division
+    static void Division(int firstNumber, int secondNumber) {
+        int calculate = (firstNumber / secondNumber);
+        System.out.println(firstNumber + "/" + secondNumber + "=" + calculate);
+    }
+
+    //Modulus
+    static void Modulus(int firstNumber, int secondNumber) {
+        int calculate = (firstNumber % secondNumber);
+        System.out.println(firstNumber + "%" + secondNumber + "=" + calculate);    }
+
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         Scanner operationPerformer = new Scanner(System.in);
@@ -22,28 +50,23 @@ public class SimpleCalculator {
             switch(operation)
             {
                 case "+":       //Addition
-                calculate = (firstNumber + secondNumber);
-                System.out.println(firstNumber + "+" + secondNumber + "=" + calculate);
-                break;
+                    Addition(firstNumber, secondNumber);
+                    break;
                 case "-":       //Subtraction
-                calculate = (firstNumber - secondNumber);
-                System.out.println(firstNumber + "-" + secondNumber + "=" + calculate);
-                break;
+                    Subtraction(firstNumber, secondNumber);
+                    break;
                 case "*":       //Multiplication
-                calculate = (firstNumber * secondNumber);
-                System.out.println(firstNumber + "*" + secondNumber + "=" + calculate);
-                break;
+                    Multiplication(firstNumber, secondNumber);
+                    break;
                 case "/":       //Division
-                calculate = (firstNumber / secondNumber);
-                System.out.println(firstNumber + "/" + secondNumber + "=" + calculate);
-                break;
+                    Division(firstNumber, secondNumber);
+                    break;
                 case "%":       //Modulus
-                calculate = (firstNumber % secondNumber);
-                System.out.println(firstNumber + "%" + secondNumber + "=" + calculate);
-                break;
+                    Modulus(firstNumber, secondNumber);
+                    break;
                 default:       //Wrong Input
-                System.out.println("Wrong operation");
-                break;
+                    System.out.println("Wrong operation");
+                    break;
             }
             System.out.print("To CONTINUE enter \'1\' or STOP enter \'0\': ");      //To continue or stop
             start = userInput.nextInt();
