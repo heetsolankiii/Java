@@ -1,5 +1,5 @@
 import java.util.*;
-public class Classes {
+public class Method {
     static void Add(int a, int b) {
         int add = a + b;
         System.out.println(add);
