@@ -10,5 +10,6 @@ class UserInput
         int secondNumber = userInput.nextInt();
         int sum = firstNumber + secondNumber;
         System.out.println(firstNumber + "+" + secondNumber + "=" + sum);
+        userInput.close();
     }
 }
