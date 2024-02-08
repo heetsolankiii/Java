@@ -21,5 +21,7 @@ class Occurence {
             }
         }
         System.out.println(target + " was found " + count + " times.");
+        userInput.close();
+        occurence.close();
     }
 }
