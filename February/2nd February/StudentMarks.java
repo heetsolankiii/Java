@@ -18,6 +18,10 @@ public class StudentMarks {
         marks2 = marksTwo.nextInt();
         System.out.print("Enter marks for 3rd Subject: ");
         marks3 = marksThree.nextInt();
+        student.close();
+        marksOne.close();
+        marksTwo.close();
+        marksThree.close();
     }
     // Displaying the marks
     void displayMarks(int percent) {
