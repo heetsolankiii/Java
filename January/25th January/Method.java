@@ -11,5 +11,6 @@ public class Method {
         System.out.print("Enter value for b: ");
         int b = userInput.nextInt();
         Add(a, b);
+        userInput.close();
     }
 }
