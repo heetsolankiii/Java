@@ -31,7 +31,6 @@ public class SimpleCalculator {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         Scanner operationPerformer = new Scanner(System.in);
-        int calculate = 0;
         int start = 1;
         while(start==1)
         {
@@ -71,5 +70,7 @@ public class SimpleCalculator {
             System.out.print("To CONTINUE enter \'1\' or STOP enter \'0\': ");      //To continue or stop
             start = userInput.nextInt();
         }
+        userInput.close();
+        operationPerformer.close();
     }
 }
