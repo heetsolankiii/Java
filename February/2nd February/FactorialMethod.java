@@ -15,5 +15,6 @@ public class FactorialMethod {
         int number = userInput.nextInt();
         int factorial = myObj.Fact(number);
         System.out.println(number + "! = " + factorial);
+        userInput.close();
     }
 }
