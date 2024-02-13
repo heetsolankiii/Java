@@ -1,8 +1,13 @@
+import java.util.*;
+
 public class Armstrong_Number 
 {
     public static void main(String[] args) 
     {
-        int number = 1634, originalNumber = 0, remainder = 0, result = 0, n = 0;
+        Scanner num = new Scanner(System.in);
+        int originalNumber = 0, remainder = 0, result = 0, n = 0;
+        System.out.print("Enter a number: ");
+        int number = num.nextInt();
         originalNumber = number;
         int originalNumber1 = number;
         while(originalNumber != 0) 
@@ -25,5 +30,6 @@ public class Armstrong_Number
         {
             System.out.println(number + " is not an Armstrong number.");
         }
+        num.close();
     }
 }
