@@ -5,6 +5,8 @@ public class TryCatchOne {
         }
         catch(ArithmeticException e) {
             System.out.println(e);
+            System.err.println("Cannot divide by zero.");
         }
+        System.out.println("rest of the code...");
     }
 }
